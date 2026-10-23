@@ -1,0 +1,7 @@
+{
+  "platform": "nextjs",
+  "port": 3000,
+  "build": {
+    "location": "."
+  }
+}

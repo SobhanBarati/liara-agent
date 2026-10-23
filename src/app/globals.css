@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-vazirmatn), system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* --- تنظیمات پایه --- */
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #070B14; /* رنگ پس‌زمینه اصلی تم */
+  color: #e5e7eb;
+  font-family: var(--font-vazirmatn), system-ui, sans-serif;
+  overflow: hidden; /* جلوگیری از اسکرول اضافه کل صفحه */
+}
+
+/* --- شخصی‌سازی اسکرول‌بار (Scrollbar) --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B1120; /* رنگ پس‌زمینه ترک */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155; /* رنگ خود اسکرول‌بار */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4; /* رنگ فیروزه‌ای در حالت هاور (لیارا) */
+}
+
+/* برای مرورگر فایرفاکس */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 #0B1120;
+}
+
+/* کلاس اختصاصی برای اسکرول‌بارهای داخل کارت‌ها (اگر نیاز شد) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
