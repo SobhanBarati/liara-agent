@@ -1,7 +1,6 @@
 {
-  "platform": "nextjs",
-  "port": 3000,
-  "build": {
-    "location": "."
-  }
+  "next": {
+    "mirror": false
+  },
+  "port": 3000
 }
